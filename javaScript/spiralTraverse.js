@@ -67,3 +67,6 @@ function spiralTraverse(array) {
   traverse("right", 0, 0);
   return results;
 }
+
+
+module.exports = spiralTraverse;

@@ -1,0 +1,24 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "My Leetcode and AlgoExpert Problems",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/javaScriptTesting"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TanisTanis/leetcode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TanisTanis/leetcode/issues"
+  },
+  "homepage": "https://github.com/TanisTanis/leetcode#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.0"
+  }
+}
