@@ -9,7 +9,6 @@ class SingleCycleCheck {
     Arrays.fill(indexes, 1);
 
     while (count < array.length) {
-      System.out.println(currentIndex);
       indexes[currentIndex] = 0;
       int newIndex = currentIndex + array[currentIndex];
       currentIndex = indexCalc(newIndex, array.length);
