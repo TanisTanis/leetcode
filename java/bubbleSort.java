@@ -15,7 +15,7 @@ class BubbleSort {
           swaps = true;
         }
       }
-      if (swaps == false) {
+      if (!swaps) {
         noSwaps = true;
       }
     }
