@@ -10,7 +10,6 @@ class BubbleSort {
         int next = array[i + 1];
 
         if (cur > next) {
-          int temp = array[i];
           array[i] = next;
           array[i + 1] = cur;
           swaps = true;
