@@ -91,3 +91,5 @@ function changeToZeros(x, y, matrix) {
 
   checkAdjacent(x, y);
 }
+
+module.exports = removeIslands;
