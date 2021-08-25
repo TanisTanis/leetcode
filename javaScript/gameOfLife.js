@@ -11,6 +11,7 @@ var gameOfLife = function (board) {
       board[i][j] = newVal;
     }
   }
+
   return board;
 };
 
