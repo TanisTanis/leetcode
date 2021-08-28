@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class BSTTraversal {
   public static List<Integer> inOrderTraverse(BST tree, List<Integer> array) {
     if (tree.left != null) {
