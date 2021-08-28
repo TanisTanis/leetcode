@@ -1,6 +1,8 @@
 node_modules
 target
 
+javaScript/class.js
+
 # Compiled class file
 *.class
 

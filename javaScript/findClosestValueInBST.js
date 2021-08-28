@@ -1,24 +1,30 @@
 function findClosestValueInBst(tree, target) {
-  //difference
-  let maxDifference = Infinity;
-  let closestValue = null;
+  let closest = tree.value;
+  let closestDiff = Math.abs(tree.value - target);
 
-  //recursive function
-  function treeTraversal(node) {
-    let difference = Math.abs(target - node.value);
-    if (difference < maxDifference) {
-      maxDifference = difference;
-      closestValue = node.value;
+  function searchBST(node) {
+    let val = node.value;
+    let diff = Math.abs(val - target);
+
+    if (diff < closestDiff) {
+      closestDiff = diff;
+      closest = val;
     }
-    if (node.left) {
-      treeTraversal(node.left);
-    }
-    if (node.right) {
-      treeTraversal(node.right);
+
+    if (val < target) {
+      if (node.right !== null) {
+        searchBST(node.right);
+      }
+    } else if (val > target) {
+      if (node.left !== null) {
+        searchBST(node.left);
+      }
+    } else if (val === target) {
+      closest = val;
+      return;
     }
   }
-  treeTraversal(tree);
 
-  //return difference
-  return closestValue;
+  searchBST(tree);
+  return closest;
 }
