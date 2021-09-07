@@ -1,4 +1,9 @@
 function binaryPatternMatching(pattern, s) {
+  if (pattern === "" || s === "") return 0;
+  if (typeof pattern !== "string" || typeof s !== "string") {
+    throw new Error("Invalid inputs");
+  }
+
   const patternLength = pattern.length;
 
   let consonants = "bcdfghjklmnpqrstvwxz";
@@ -34,4 +39,4 @@ function binaryPatternMatching(pattern, s) {
   return validSubstrings;
 }
 
-console.log(binaryPatternMatching("0", "y"));
+module.exports = binaryPatternMatching;
