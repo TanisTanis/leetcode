@@ -148,3 +148,5 @@ let elevatorStates = [
 ];
 
 console.log(findElevatorPath(elevatorStates, "D", "5-4"));
+
+module.exports = findElevatorPath;
